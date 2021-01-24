@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textview_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_first_fragment"
+        android:layout_marginTop="@dimen/margin64"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textCapCharacters"
+        android:text=""
+        android:layout_below="@id/textview_date"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_centerHorizontal="true"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/firstname"
+        android:inputType="textCapSentences"
+        android:text=""
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_centerHorizontal="true"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textview_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_mail"
+        android:layout_below="@id/editTextFirstName"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_below="@id/textview_mail"
+        android:gravity="center_horizontal">
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mister"/>
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/miss"
+                android:checked="true"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/checkGroup"
+        android:layout_height="@dimen/size128"
+        android:layout_width="match_parent"
+        android:layout_below="@id/radioGroup">
+        <LinearLayout
+            android:id="@+id/checkLayout"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+            <CheckBox android:id="@+id/checkbox_l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l1"/>
+            <CheckBox android:id="@+id/checkbox_l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l2"/>
+            <CheckBox android:id="@+id/checkbox_l3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l3"/>
+            <CheckBox android:id="@+id/checkbox_l4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l4"/>
+            <CheckBox android:id="@+id/checkbox_l5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l5"/>
+            <CheckBox android:id="@+id/checkbox_l6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l6"/>
+            <CheckBox android:id="@+id/checkbox_l7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l7"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/editTextHourGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hourplay"
+        android:inputType="number"
+        android:text=""
+        android:layout_below="@id/checkGroup"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_centerHorizontal="true"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:layout_below="@id/editTextHourGame"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generate"
+        android:layout_below="@id/editTextHourGame"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_marginStart="@dimen/margin32" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_below="@id/editTextHourGame"
+        android:layout_toRightOf="@id/button_validate"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_marginStart="@dimen/margin128" />
+</RelativeLayout>

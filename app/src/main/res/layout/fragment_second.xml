@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/textview_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin64"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textview_Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_Name"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textview_Playtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_Mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+
+    <TextView
+        android:id="@+id/textview_C"
+        android:text="@string/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_Playtime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+
+    <TextView
+        android:id="@+id/textview_Cpp"
+        android:text="@string/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_C"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+
+    <TextView
+        android:id="@+id/textview_Java"
+        android:text="@string/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_Cpp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+
+    <TextView
+        android:id="@+id/textview_Pascal"
+        android:text="@string/l4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_Java"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+
+    <TextView
+        android:id="@+id/textview_Javascript"
+        android:text="@string/l5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_Pascal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+
+    <TextView
+        android:id="@+id/textview_Php"
+        android:text="@string/l6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_Javascript"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+
+    <TextView
+        android:id="@+id/textview_Csharp"
+        android:text="@string/l7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_Php"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        android:layout_below="@id/textview_Csharp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin32"/>
+</RelativeLayout>
