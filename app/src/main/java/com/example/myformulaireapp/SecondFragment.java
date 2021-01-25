@@ -1,6 +1,7 @@
 package com.example.myformulaireapp;
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -41,8 +42,17 @@ public class SecondFragment extends Fragment {
         Csharp = (TextView) view.findViewById(R.id.textview_Csharp);
         amount = (TextView) view.findViewById(R.id.textview_Playtime);
 
+        Toast.makeText(getContext(), getArguments().getString("Civilite"), Toast.LENGTH_SHORT).show();
+
         if (getArguments().getString("FirstName") != null && getArguments().getString("Name") != null) {
             name.setText(getArguments().getString("Civilite") + getArguments().getString("Name") + " " + getArguments().getString("FirstName"));
+
+            if (getArguments().getString("Civilite") == "Mr.") {
+                name.setTextColor(getResources().getColor(R.color.boy));
+            }else{
+                name.setTextColor(getResources().getColor(R.color.girl));
+            }
+
             mail.setText("Votre email : "+getArguments().getString("FirstName")+"."+getArguments().getString("Name")+"@ludus-academie.fr");
         }else{
             name.setText("Veuillez entrer les champs correspondants");

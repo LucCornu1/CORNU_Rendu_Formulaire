@@ -14,4 +14,7 @@
     <color name="good">#FF00FF00</color>
     <color name="bad">#FFFF0000</color>
     <color name="attention">#FFFFA500</color>
+
+    <color name="girl">#FFF000AA</color>
+    <color name="boy">#FF006FAA</color>
 </resources>

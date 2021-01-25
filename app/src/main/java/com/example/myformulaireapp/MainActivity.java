@@ -16,6 +16,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    Toolbar toolbar = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Question 1", "*************\n\n\n\n\n\n "+sName+" \n\n\n\n\n\n*************");
 
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
